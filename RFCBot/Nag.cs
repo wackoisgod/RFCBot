@@ -490,7 +490,7 @@ namespace RFCBot
         {
             using var db = new RFCContext();
 
-            var timeInThePast = DateTimeOffset.UtcNow - TimeSpan.FromSeconds(30);
+            var timeInThePast = DateTimeOffset.UtcNow - TimeSpan.FromDays(5);
             var pendingProposals = db.Proposals.Where(x => x.Start.HasValue && x.Start.Value < timeInThePast && !x.Closed);
             foreach (var p in pendingProposals) {
                 using var db2 = new RFCContext();
