@@ -7,7 +7,7 @@ using System.Globalization;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.EntityFrameworkCore.Update;
+using Microsoft.EntityFrameworkCore.Update; 
 
 namespace RFCBot
 {
